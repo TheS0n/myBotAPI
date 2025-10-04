@@ -16,9 +16,6 @@ client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
 bot=TelegramClient('bot',API_ID,API_HASH).start(bot_token=BOT_TOKEN)
 
 
-@client.on(events.NewMessage)
-async def hanlder(event):
-    pass
 
 @client.on(events.NewMessage(chats=[CHANNEL_ID]))
 async def handler(event):
