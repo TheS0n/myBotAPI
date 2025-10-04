@@ -14,6 +14,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 # ---------- Telethon client ----------
 client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
 
+
 @client.on(events.NewMessage(chats=[CHANNEL_ID]))
 async def handler(event):
     text = event.message.message or ""
