@@ -4,7 +4,7 @@ from telethon.sessions import StringSession
 
 # متغیرهای محیطی
 API_ID = int(os.environ.get("API_ID"))
-API_HASH = os.environ.get("API_HASH"))
+API_HASH = os.environ.get("API_HASH")
 SESSION_STRING = os.environ.get("SESSION")  # Session String
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))  # numeric channel id
 
