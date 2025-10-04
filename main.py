@@ -21,8 +21,8 @@ bot=TelegramClient('bot',API_ID,API_HASH).start(bot_token=BOT_TOKEN)
 async def handler(event):
     text = event.message.message or ""
     await client.send_message("me", f"📢 پست جدید:\n\n{text}")
-    print("پیام به Saved Messages فرستاده شد ✅")
-    print(text)
+    print("پیام به Saved Messages فرستاده شد ✅",flush=True)
+    print(text,flush=True)
 
 app = Flask(__name__)
 
